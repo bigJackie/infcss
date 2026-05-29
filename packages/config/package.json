@@ -1,0 +1,28 @@
+{
+  "name": "@infcss/config",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "Infcss config",
+  "main": "src/index.ts",
+  "module": "src/index.ts",
+  "exports": {
+    ".": {
+      "import": "./src/index.ts",
+      "require": "./src/index.ts"
+    }
+  },
+  "files": [
+    "index.js",
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild"
+  },
+  "dependencies": {
+    "jiti": "^2.7.0",
+    "@infcss/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "unbuild": "^3.6.1"
+  }
+}

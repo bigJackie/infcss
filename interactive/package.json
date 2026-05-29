@@ -1,0 +1,19 @@
+{
+  "name": "interactive",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "infcss": "workspace:*",
+    "@infcss/vite": "workspace:*",
+    "@infcss/presets": "workspace:*"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.7",
+    "vue": "^3.5.35"
+  }
+}

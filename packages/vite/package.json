@@ -1,0 +1,31 @@
+{
+  "name": "@infcss/vite",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "Atom css framework",
+  "main": "src/index.ts",
+  "module": "src/index.ts",
+  "exports": {
+    ".": {
+      "import": "./src/index.ts",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "index.js",
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild"
+  },
+  "dependencies": {
+    "@infcss/config": "workspace:*",
+    "@infcss/core": "workspace:*"
+  },
+  "peerDependencies": {
+    "vite": "^5.2.0"
+  },
+  "devDependencies": {
+    "unbuild": "^3.6.1"
+  }
+}

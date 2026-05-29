@@ -1,0 +1,30 @@
+{
+  "name": "@jackiew/infcss",
+  "private": "true",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "Atom css framework",
+  "scripts": {
+    "clean": "rimraf --glob **/node_modules packages/*/dist",
+    "build": "rimraf packages/*/dist --glob && pnpm -r --filter=./packages/* run build",
+    "play": "pnpm -C interactive run dev",
+    "lint": "npx prettier --write . && npx eslint --fix .",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
+  },
+  "keywords": [
+    "css",
+    "atom",
+    "infcss"
+  ],
+  "author": "JackieWong",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "esbuild": "^0.28.0",
+    "prettier": "^3.8.3",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.14",
+    "vitest": "^4.1.7"
+  }
+}

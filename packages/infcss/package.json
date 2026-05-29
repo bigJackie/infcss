@@ -1,0 +1,34 @@
+{
+  "name": "infcss",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "Atom css framework",
+  "main": "src/index.ts",
+  "module": "dist/index.cjs",
+  "exports": {
+    ".": {
+      "import": "./src/index.ts",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "index.js",
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild"
+  },
+  "dependencies": {
+    "@infcss/core": "workspace:*",
+    "@infcss/vite": "workspace:*"
+  },
+  "devDependencies": {
+    "unbuild": "^3.6.1"
+  },
+  "keywords": [
+    "css",
+    "atom"
+  ],
+  "author": "JackieWong",
+  "license": "MIT"
+}
