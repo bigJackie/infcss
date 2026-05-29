@@ -1,5 +1,5 @@
 import type { Rule, ParsedResult, CSSValue } from '@infcss/shared'
-import { expandRegex } from '../utils/regexExpand'
+import { expandRegex } from '../utils/regexExpand.ts'
 
 export interface ClassEntry {
   name: string

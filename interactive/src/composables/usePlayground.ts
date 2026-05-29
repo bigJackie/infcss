@@ -1,5 +1,5 @@
 import { ref, computed } from 'vue'
-import { getCSS } from './useCatalog'
+import { getCSS } from './useCatalog.ts'
 
 export function usePlayground() {
   const classes = ref<string[]>([])

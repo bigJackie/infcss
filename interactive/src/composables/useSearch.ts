@@ -1,5 +1,5 @@
 import { computed, type Ref } from 'vue'
-import type { ClassEntry } from './useCatalog'
+import type { ClassEntry } from './useCatalog.ts'
 
 export interface SearchResult extends ClassEntry {
   score: number

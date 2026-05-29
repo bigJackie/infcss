@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import type { ClassEntry } from '../composables/useCatalog'
-import { highlightCSS } from '../utils/highlight'
+import type { ClassEntry } from '../composables/useCatalog.ts'
+import { highlightCSS } from '../utils/highlight.ts'
 
 defineProps<{ entry: ClassEntry }>()
 
