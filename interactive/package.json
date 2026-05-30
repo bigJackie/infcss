@@ -8,9 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "infcss": "workspace:*",
-    "@infcss/vite": "workspace:*",
-    "@infcss/presets": "workspace:*"
+    "infcss": "workspace:*"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^6.0.7",

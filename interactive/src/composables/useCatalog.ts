@@ -1,4 +1,4 @@
-import type { Rule, ParsedResult, CSSValue } from '@infcss/shared'
+import type { Rule, ParsedResult, CSSValue } from 'infcss'
 import { expandRegex } from '../utils/regexExpand.ts'
 
 export interface ClassEntry {

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
-import { rules } from '@infcss/presets'
+import { rules } from 'infcss'
 import { buildCatalog, type ClassEntry } from './composables/useCatalog.ts'
 import { useSearch } from './composables/useSearch.ts'
 import SearchBox from './components/SearchBox.vue'
