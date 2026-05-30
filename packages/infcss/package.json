@@ -9,6 +9,10 @@
     ".": {
       "import": "./src/index.ts",
       "require": "./dist/index.cjs"
+    },
+    "./vite": {
+      "import": "./src/vite.ts",
+      "require": "./dist/vite.cjs"
     }
   },
   "files": [
@@ -20,7 +24,9 @@
   },
   "dependencies": {
     "@infcss/core": "workspace:*",
-    "@infcss/vite": "workspace:*"
+    "@infcss/vite": "workspace:*",
+    "@infcss/shared": "workspace:*",
+    "@infcss/presets": "workspace:*"
   },
   "devDependencies": {
     "unbuild": "^3.6.1"
