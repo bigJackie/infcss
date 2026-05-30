@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { ClassEntry } from '../composables/useCatalog'
-import type { SearchResult } from '../composables/useSearch'
+import type { ClassEntry } from '../composables/useCatalog.ts'
+import type { SearchResult } from '../composables/useSearch.ts'
 
 defineProps<{ results: SearchResult[]; selected: ClassEntry | null }>()
 defineEmits<{ select: [ClassEntry] }>()
