@@ -5,7 +5,7 @@
   "version": "0.0.1",
   "description": "Atom css framework",
   "scripts": {
-    "publish:all": "pnpm -r --filter=./packages/* publish --access public",
+    "publish:all": "pnpm -r --filter=./packages/* publish --access public --no-git-checks --registry https://registry.npmjs.org/",
     "clean": "rimraf --glob **/node_modules packages/*/dist",
     "build": "rimraf packages/*/dist --glob && pnpm -r --filter=./packages/* run build",
     "build:interactive": "pnpm run build && pnpm -C interactive run build",
