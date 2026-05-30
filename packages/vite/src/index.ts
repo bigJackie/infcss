@@ -15,9 +15,9 @@ const EVENT_CHANGE = 'change'
 const VIRTUAL_CSS_ID = 'virtual:inf.css'
 
 export default function InfCSSVite(): PluginOption {
-  const vueRE = /\.vue$/
-  const classMatchRE = /(?<=class=")(.*?)(?=")/g
-  const classTestRE = /(?<=class=")(.*?)(?=")/
+  const fileRE = /\.(vue|svelte|jsx|tsx|html)$/
+  const classMatchRE = /(?<=class(?:Name)?=")(.*?)(?=")/g
+  const classTestRE = /class(?:Name)?="(.*?)"/
 
   const config = loadConfig()
   const { matchGroup, generateCSSStyle } = useInfCSS(config)
@@ -67,7 +67,7 @@ export default function InfCSSVite(): PluginOption {
     },
 
     transform(code, id) {
-      if (!vueRE.test(id) || !classTestRE.test(code)) return null
+      if (!fileRE.test(id) || !classTestRE.test(code)) return null
 
       let modifiedCode = code
       const inlineClass = code.match(classMatchRE) ?? []
