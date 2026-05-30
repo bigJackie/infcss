@@ -32,7 +32,7 @@ importers:
 
   interactive:
     dependencies:
-      infcss:
+      inf-css:
         specifier: workspace:*
         version: link:../packages/infcss
     devDependencies:

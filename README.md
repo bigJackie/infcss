@@ -31,7 +31,7 @@ test/         规则与特性测试
 ### 1.安装
 
 ```bash
-npm add infcss
+npm add inf-css
 # 可选安装
 npm install @infcss/core @infcss/presets
 ```
@@ -41,7 +41,7 @@ npm install @infcss/core @infcss/presets
 ```ts
 // 在 Vite 配置中引入插件 
 // vite.config.ts
-import InfCSSVite from 'infcss/vite'
+import InfCSSVite from 'inf-css/vite'
 export default defineConfig({
   plugins: [
       // 其他插件...
@@ -71,7 +71,7 @@ import 'virtual:inf.css'
 - variants: 变体处理，如 hover: focus: dark: 等前缀
 
 ```ts
-import { defineInfCSSConfig } from 'infcss'
+import {defineInfCSSConfig} from 'inf-css'
 
 export default defineInfCSSConfig({
   rules: [

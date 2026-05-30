@@ -1,4 +1,4 @@
-import { InfCSSConfig, defineInfCSSConfig } from 'infcss'
+import { InfCSSConfig, defineInfCSSConfig } from 'inf-css'
 
 export default defineInfCSSConfig<InfCSSConfig>({
   rules: [
