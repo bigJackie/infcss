@@ -6,7 +6,8 @@
   "description": "Atom css framework",
   "scripts": {
     "clean": "rimraf --glob **/node_modules packages/*/dist",
-    "build": "rimraf packages/*/dist --glob && pnpm -r --filter=./packages/* run build && pnpm -C interactive run build",
+    "build": "rimraf packages/*/dist --glob && pnpm -r --filter=./packages/* run build",
+    "build:interactive": "pnpm run build && pnpm -C interactive run build",
     "interactive": "pnpm -C interactive run dev",
     "lint": "npx prettier --write . && npx eslint --fix .",
     "test": "vitest",

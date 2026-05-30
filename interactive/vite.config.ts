@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import InfCSSVite from 'infcss/vite'
 
-export default defineConfig({
+export default defineConfig(({ command }) => ({
+  base: command === 'build' ? '/projects/infcss/' : '/',
   plugins: [vue(), InfCSSVite()],
-})
+}))
