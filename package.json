@@ -7,7 +7,7 @@
   "scripts": {
     "clean": "rimraf --glob **/node_modules packages/*/dist",
     "build": "rimraf packages/*/dist --glob && pnpm -r --filter=./packages/* run build",
-    "play": "pnpm -C interactive run dev",
+    "interactive": "pnpm -C interactive run dev",
     "lint": "npx prettier --write . && npx eslint --fix .",
     "test": "vitest",
     "coverage": "vitest run --coverage"

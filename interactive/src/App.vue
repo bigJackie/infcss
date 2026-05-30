@@ -50,7 +50,7 @@ onMounted(() => {
     <header class="hd">
       <div class="brand">
         <span class="brand-name">InfCSS</span>
-        <span class="brand-sub">交互式</span>
+        <span class="brand-sub">交互式文档</span>
       </div>
       <a
         href="https://github.com/bigJackie/infcss"
@@ -174,8 +174,8 @@ body {
 }
 .brand-name {
   display: block;
-  font-size: 11px;
-  color: var(--dim);
+  font-size: 14px;
+  color: var(--dim2);
 }
 .brand-sub {
   display: block;
