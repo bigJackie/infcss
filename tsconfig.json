@@ -1,12 +1,13 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "module": "esnext",
+    "module": "nodenext",
     "moduleResolution": "nodenext",
     "types": ["node"],
     "lib": ["ESNext", "DOM"],
     "resolveJsonModule": true,
     "allowImportingTsExtensions": true,
+    "noEmit": true,
     "strict": true,
     "paths": {
       "@infcss/core": ["./packages/core/src/index.ts"],
