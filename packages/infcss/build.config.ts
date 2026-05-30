@@ -4,7 +4,12 @@ export default defineBuildConfig({
   entries: ['./src/index', './src/vite'],
   clean: true,
   declaration: true,
-  externals: ['@infcss/core', '@infcss/vite', '@infcss/presets'],
+  externals: [
+    '@infcss/core',
+    '@infcss/vite',
+    '@infcss/presets',
+    '@infcss/shared',
+  ],
   rollup: {
     emitCJS: true,
   },

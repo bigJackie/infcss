@@ -3,11 +3,11 @@
   "type": "module",
   "version": "0.0.1",
   "description": "Infcss config",
-  "main": "src/index.ts",
-  "module": "src/index.ts",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
   "exports": {
     ".": {
-      "import": "./src/index.ts",
+      "import": "./dist/index.mjs",
       "require": "./src/index.ts"
     }
   },

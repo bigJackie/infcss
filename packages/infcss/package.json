@@ -3,15 +3,15 @@
   "type": "module",
   "version": "0.0.1",
   "description": "Atom css framework",
-  "main": "src/index.ts",
-  "module": "dist/index.cjs",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
   "exports": {
     ".": {
-      "import": "./src/index.ts",
+      "import": "./dist/index.mjs",
       "require": "./dist/index.cjs"
     },
     "./vite": {
-      "import": "./src/vite.ts",
+      "import": "./dist/vite.mjs",
       "require": "./dist/vite.cjs"
     }
   },
