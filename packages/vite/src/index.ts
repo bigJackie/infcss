@@ -62,6 +62,9 @@ export default function InfCSSVite(): PluginOption {
 
     load(id) {
       if (id === VIRTUAL_CSS_ID) {
+        if (!fs.existsSync(infCSSPath)) {
+          return ''
+        }
         return fs.readFileSync(infCSSPath, 'utf-8')
       }
     },
