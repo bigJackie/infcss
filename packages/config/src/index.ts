@@ -1,14 +1,6 @@
 import jiti from 'jiti'
 import { existsSync } from 'node:fs'
 import { join, dirname } from 'node:path'
-import type { Rule, Variant } from '@infcss/shared'
-
-export type InfCSSConfig = {
-  rules?: Rule[]
-  variants?: Variant[]
-}
-
-export const defineInfCSSConfig = <T extends InfCSSConfig>(config: T) => config
 
 const CONFIG_FILES = [
   'infcss.config.ts',
