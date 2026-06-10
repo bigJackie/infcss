@@ -15,7 +15,7 @@
 </div>
 
 ## 可交互指南
-[Infinite CSS在线可交互](https://jackiewong.top/projects/infcss/)
+[Infinite CSS在线可交互指南](https://jackiewong.top/projects/infcss/)
 
 ## ✨ 特性
 
