@@ -1,7 +1,21 @@
-# 🎨 Infcss
+<div align="center">
+
+# Infinite CSS
+
+<div>
+
+[![](https://img.shields.io/badge/license-MIT-violet.svg)](https://champyin.com)
+[![](https://img.shields.io/badge/package-NPM-blueviolet.svg)](https://champyin.com)
+
+</div>
 
 > 轻量、可扩展的原子化 CSS 规则引擎，提供规则解析、样式生成与工程化集成能力。  
 > 适用于需要**可扩展语法**与**可控输出**的前端项目(个人练手版)
+
+</div>
+
+## 可交互指南
+[Infinite CSS在线可交互](https://jackiewong.top/projects/infcss/)
 
 ## ✨ 特性
 
